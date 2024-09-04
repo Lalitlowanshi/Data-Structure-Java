@@ -2,7 +2,6 @@
 import java.util.HashSet;
 import java.util.Set;
 public class walking_robot_simulation {
-class Solution {
     public int robotSim(int[] commands, int[][] obstacles) {
         int x=0,y=0,d=0;
         int[][] direction={{0,1},{1,0},{0,-1},{-1,0}};
@@ -32,4 +31,4 @@ class Solution {
         return maxDistance;
     }
 }
-}
+
