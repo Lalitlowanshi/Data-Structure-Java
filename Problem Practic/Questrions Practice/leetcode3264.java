@@ -29,3 +29,38 @@ class Solution {
         return result;
     }
 }
+
+
+
+
+
+
+
+//Another solution of the same leetcode problem
+
+/*
+class Solution {
+    public int[] getFinalState(int[] nums, int k, int multiplier) {
+        int count = 0;
+        int n = nums.length;
+        int arr[] = new int[n];
+        arr = nums;
+        while (count != k) {
+            int min = Integer.MAX_VALUE;
+            for (int i = 0; i < n; i++) {
+                if (min > arr[i]) {
+                    min = arr[i];
+                }
+            }
+            for (int i = 0; i < n; i++) {
+                if (min == arr[i]) {
+                    arr[i] = min * multiplier;
+                    count++;
+                    break;
+                }
+            }
+        }
+        return arr;
+    }
+}
+*/
